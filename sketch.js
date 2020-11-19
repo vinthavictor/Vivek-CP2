@@ -25,7 +25,7 @@ function setup() {
 	dustobj = new Dustbin(1200,650)
 
 	paperObject = new Paper(200, 450 , 40 );
-	ground = new Ground(width/2,670,width,20)
+	ground = new Ground(800,670,1600,20)
 	
 
 	//bucket = new Dustbin(600, 550);
@@ -40,7 +40,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   Engine.update(engine);
-  background(0);
+  background("yellow");
   paperObject.display();
   dustobj.display();
   ground.display();
@@ -49,9 +49,9 @@ function draw() {
 }
 
 function keyPressed(){
-	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paperObject.body,paperObject.position,{x:85,y:-85});
-	}
+		if(keyCode === UP_ARROW){
+			Matter.Body.applyForce(paperObject.body,paperObject.position,{x:85,y:-85});
+		}
 }
 
 
