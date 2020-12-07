@@ -22,9 +22,10 @@ class Paper
 	{
 			
 			var paperpos=this.body.position;		
-
+			var angle = this.body.angle;
 			push()
 			translate(paperpos.x, paperpos.y);
+			rotate(angle)
 			imageMode(CENTER);
 			image(this.image,0,0,this.r, this.r);
 			pop()

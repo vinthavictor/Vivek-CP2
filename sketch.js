@@ -22,7 +22,7 @@ function setup() {
 	// groundSprite=createSprite(width/2, height-35, width,10);
 	// groundSprite.shapeColor= "yellow"
 
-	dustobj = new Dustbin(1200,650)
+	dustobj = new Dustbin(1200,610)
 
 	paperObject = new Paper(200, 450 , 40 );
 	ground = new Ground(800,670,1600,20)
